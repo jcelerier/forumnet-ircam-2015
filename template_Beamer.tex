@@ -1,0 +1,121 @@
+\documentclass[french,12pt,t]{beamer}
+\usetheme{m}
+
+\usepackage{microtype}
+\usepackage[backend=biber]{biblatex}
+
+
+\usepackage{nameref}
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+
+\beamertemplatenavigationsymbolsempty
+\setbeameroption{hide notes}
+\setbeamertemplate{note page}[plain]
+
+
+\title{i-score}
+\subtitle{Écriture du temps et de l'interaction}
+\date{Novembre 2015}
+\author{Pierre Cochard, Jean-Michaël Celerier}
+\institute{LaBRI, SCRIME, Blue Yeti}
+
+\begin{document}
+    
+    \maketitle
+
+\begin{frame}
+    \frametitle{Table des matières}
+    \setbeamertemplate{section in toc}[sections numbered]
+    \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Présentation}
+\begin{frame}
+    \frametitle{\currentname}
+    i-score est un séquenceur généraliste, adapté à l'écriture de spectacles interactifs.
+    
+    
+\end{frame}
+
+\subsection{Historique}
+\begin{frame}
+    \frametitle{\currentname}
+\end{frame}
+
+
+\section{Modèle du temps}
+\subsection{Modèle théorique}
+\begin{frame}
+    \frametitle{\currentname}
+    \begin{itemize}
+        \item Modèles pour l'édition :
+        CSP
+        
+        \item Modèles pour l'exécution :
+        NTCC, Réseaux de Petri, Automates temporisés, langages réactifs
+    \end{itemize}
+\end{frame}
+
+\subsection{Charte  graphique}
+\begin{frame}
+    \frametitle{\currentname}
+    \begin{itemize}
+        \item Syntaxe temporelle
+        
+        \item Syntaxe logique
+        
+        \item Syntaxe de données
+    \end{itemize}
+\end{frame}
+
+
+\section{Fonctionnalités}
+\begin{frame}
+    \frametitle{\currentname}
+    \begin{itemize}
+        \item Hiérarchie, automations, mappings.
+        \item Protocoles supportés : OSC, MIDI, Minuit, OSCQuery (en cours).
+        \item Interface pour plug-ins.
+        \item Répartition à l'édition.
+        \item OS X, Windows, Linux...
+        \item Intégration Max/MSP, lecteur en ligne de commande.
+        \item Contrôle partiel via UIs web.
+    \end{itemize}
+\end{frame}
+
+
+\section{Démonstration}
+
+
+\section{Perspectives}
+\subsection{Spatial}
+\begin{frame}
+    \frametitle{\currentname}
+    Écriture adaptée aux scénarios travaillant sur données spatiales.
+    
+    \begin{itemize}
+        \item Méthode générique basée sur CAS GiNaC.
+        \item Grande flexibilité pour l'auteur (au prix des performances).
+        \item C'est un mapping généralisé qui permet de faire des calculs sur les structures sur lesquelles il opère.
+    \end{itemize}
+\end{frame}
+
+\subsection{Son}
+\begin{frame}
+    \frametitle{\currentname}
+    \begin{itemize}
+        \item Intégration avec FaUST / libaudiostream?
+        \item Boites "fichiers audio" avec effets qui s'appliquent dessus.        
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    Liens : (github, etc...)
+    
+    Merci
+\end{frame}
+
+
+\end{document}
