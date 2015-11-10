@@ -1,6 +1,8 @@
-\documentclass[french,12pt,t]{beamer}
+\documentclass[12pt,t]{beamer}
 \usetheme{m}
 
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage[backend=biber]{biblatex}
 
@@ -16,105 +18,86 @@
 
 
 \title{i-score}
-\subtitle{Écriture du temps et de l'interaction}
+\subtitle{Scoring time and interactivity}
 \date{Novembre 2015}
-\author{Pierre Cochard, Jean-Michaël Celerier}
-\institute{LaBRI, SCRIME, Blue Yeti}
+\author{Théo de la Hogue\inst{1} \and Pierre Cochard\inst{2} \and Jean-Michaël Celerier\inst{3}}
+
+\institute{\inst{1} GMEA \and \inst{2} LaBRI - SCRIME \and \inst{3} LaBRI - Blue Yeti}
 
 \begin{document}
-    
-    \maketitle
+   
+\maketitle
 
 \begin{frame}
-    \frametitle{Table des matières}
+    \frametitle{Table of contents}
     \setbeamertemplate{section in toc}[sections numbered]
     \tableofcontents[hideallsubsections]
 \end{frame}
 
-\section{Présentation}
-\begin{frame}
-    \frametitle{\currentname}
-    i-score est un séquenceur généraliste, adapté à l'écriture de spectacles interactifs.
-    
-    
-\end{frame}
-
-\subsection{Historique}
-\begin{frame}
-    \frametitle{\currentname}
-\end{frame}
-
-
-\section{Modèle du temps}
-\subsection{Modèle théorique}
-\begin{frame}
-    \frametitle{\currentname}
+\section{Presentation}
+\begin{frame}{i-score}
+    \frametitle{i-score}
     \begin{itemize}
-        \item Modèles pour l'édition :
-        CSP
-        
-        \item Modèles pour l'exécution :
-        NTCC, Réseaux de Petri, Automates temporisés, langages réactifs
+        \item Generalist tree-based data sequencer.
+        \item Target : authoring of interaction-heavy content.
+        \item Applications : interactive shows, music, museography.
+        \item Execution semantics based on formal models.
     \end{itemize}
 \end{frame}
 
-\subsection{Charte  graphique}
+\subsection{Graphical chart}
+\begin{frame}
+    \frametitle{\currentname}
+        
+\end{frame}
+
+\subsection{Features}
 \begin{frame}
     \frametitle{\currentname}
     \begin{itemize}
-        \item Syntaxe temporelle
-        
-        \item Syntaxe logique
-        
-        \item Syntaxe de données
+        \item Hierarchy, automations, mappings, custom Javascript execution.
+        \item Protocols : OSC, MIDI, Minuit, OSCQuery (in progress).
+        \item Multiple plug-in interfaces for extensibility.
+        \item Collaborative editing.
+        \item Works on OS X, Windows, Linux (desktop and embedded), Android.
+        \item Integrated to Max/MSP and command-line player.
+        \item Web UI.
     \end{itemize}
 \end{frame}
 
 
-\section{Fonctionnalités}
-\begin{frame}
-    \frametitle{\currentname}
-    \begin{itemize}
-        \item Hiérarchie, automations, mappings.
-        \item Protocoles supportés : OSC, MIDI, Minuit, OSCQuery (en cours).
-        \item Interface pour plug-ins.
-        \item Répartition à l'édition.
-        \item OS X, Windows, Linux...
-        \item Intégration Max/MSP, lecteur en ligne de commande.
-        \item Contrôle partiel via UIs web.
-    \end{itemize}
-\end{frame}
-
-
-\section{Démonstration}
+\section{Demo}
 
 
 \section{Perspectives}
-\subsection{Spatial}
+\subsection{Spatial scores}
 \begin{frame}
     \frametitle{\currentname}
-    Écriture adaptée aux scénarios travaillant sur données spatiales.
+    Means of authoring spatial-heavy scores.
+    
+    Examples : audio trajectories, video games, interactive kiosks.
     
     \begin{itemize}
-        \item Méthode générique basée sur CAS GiNaC.
-        \item Grande flexibilité pour l'auteur (au prix des performances).
-        \item C'est un mapping généralisé qui permet de faire des calculs sur les structures sur lesquelles il opère.
+        \item Generic method based on a powerful computer algebra system : GiNaC.
+        \item Generalized mapping between any parameters. 
+        \item The created structures can influence each other and properties can be 
+        extracted (such as collisions, etc.).
     \end{itemize}
 \end{frame}
 
-\subsection{Son}
+\subsection{Sound}
 \begin{frame}
     \frametitle{\currentname}
     \begin{itemize}
-        \item Intégration avec FaUST / libaudiostream?
-        \item Boites "fichiers audio" avec effets qui s'appliquent dessus.        
+        \item Integrating i-score with FaUST or the libaudiostream?
+        \item It would allow "Audio" processes that would behave like traditional DAW's tracks.
     \end{itemize}
 \end{frame}
 
 \begin{frame}
-    Liens : (github, etc...)
-    
-    Merci
+    Download now !
+    \url{https://github.com/OSSIA/i-score/releases}
+    Thanks !
 \end{frame}
 
 
