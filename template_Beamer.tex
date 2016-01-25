@@ -5,7 +5,7 @@
 %\usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage[backend=biber]{biblatex}
-
+\usepackage{graphicx}
 
 \usepackage{nameref}
 \makeatletter
@@ -15,6 +15,7 @@
 \beamertemplatenavigationsymbolsempty
 \setbeameroption{hide notes}
 \setbeamertemplate{note page}[plain]
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
 
 
 \title{i-score}
@@ -39,24 +40,83 @@
     \end{itemize}
 \end{frame}
 
+\subsection{History}
+\begin{frame}
+    \frametitle{\currentname}
+    \centering
+    \begin{figure}
+        \includegraphics[scale=0.25]{images/02.png}
+        \caption{Old i-score}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\currentname}
+    \centering
+    \begin{figure}
+        \includegraphics[scale=0.20]{images/General.png}
+        \caption{New i-score}
+    \end{figure}
+\end{frame}
+
 \subsection{Graphical chart}
 \begin{frame}
     \frametitle{\currentname}
-        
+    \centering
+    \includegraphics[scale=0.057]{images/terminology.jpg}
+\end{frame}
+\begin{frame}
+    \frametitle{\currentname}
+    \centering
+    \includegraphics[scale=0.055]{images/syntax.jpg}
+\end{frame}
+\begin{frame}
+    \frametitle{\currentname}
+    \centering
+    \includegraphics[scale=0.065]{images/example.jpg}
 \end{frame}
 
 \subsection{Features}
 \begin{frame}
     \frametitle{\currentname}
     \begin{itemize}
-        \item Hierarchy, automations, mappings, custom Javascript execution.
-        \item Protocols : OSC, MIDI, Minuit, OSCQuery (in progress).
+        \item Hierarchy, automations, mappings, custom \textbf{Javascript} execution.
+        \item Protocols : \textbf{OSC}, \textbf{Minuit}. \textbf{MIDI}, \textbf{OSCQuery} in progress.
         \item Multiple plug-in interfaces for extensibility.
         \item Collaborative editing.
-        \item Works on OS X, Windows, Linux (desktop and embedded), Android.
-        \item Integrated to Max/MSP and command-line player.
-        \item Web UI.
+        \item Works on \textbf{OS X}, \textbf{Windows}, \textbf{Linux} (desktop and embedded), \textbf{Android}.
+        \item Integration to Max/MSP and command-line player (in progress).
+        \item Web visualisation of execution (in progress).
     \end{itemize}
+\end{frame}
+
+
+\subsection{Minuit integrations}
+\begin{frame}
+    \frametitle{\currentname}
+    \centering
+    \begin{figure}
+        \includegraphics[scale=0.2]{images/jamoma.png}
+        \caption{Max/MSP with Jamoma}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\currentname}
+    \centering
+    \begin{figure}
+        \includegraphics[scale=0.2]{images/unity.png}
+        \caption{Unity}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\currentname}
+    \centering
+    \begin{figure}
+        \includegraphics[scale=0.2]{images/modul8.jpg}
+        \caption{Modul8}
+    \end{figure}
 \end{frame}
 
 
@@ -74,12 +134,13 @@
             \item Generalized mapping between any parameters. 
             \item The created structures can influence each other and properties can be 
             extracted (such as collisions, etc.).
+            \item Collaborate with IanniX ?
         \end{itemize}
         
         \item \textbf{Sound} : 
         \begin{itemize}
-            \item Integrating i-score with FaUST or the libaudiostream?
-            \item It would allow "Audio" processes that would behave like traditional DAW's tracks.
+            \item Integrating i-score with FaUST / libaudiostream (in progress).
+            \item It would allow "Audio" processes that would behave like traditional DAW tracks.
         \end{itemize}
     \end{itemize}
 \end{frame}
